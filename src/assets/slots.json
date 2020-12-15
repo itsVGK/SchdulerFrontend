@@ -1,0 +1,32 @@
+[
+    {
+        "date": "Tue Dec 15 2020",
+        "day": 15,
+        "month": 12,
+        "year": 2020,
+        "from": "11:00",
+        "to": "11:30",
+        "name": "test",
+        "number": 123132124
+    },
+    {
+        "date": "Tue Dec 16 2020",
+        "day": 16,
+        "month": 12,
+        "year": 2020,
+        "from": "12:30",
+        "number": 123132124,
+        "name": "test 1",
+        "to": "01:00"
+    },
+    {
+        "date": "12-15-2020",
+        "day": 15,
+        "month": 12,
+        "year": 2020,
+        "from": "13:30",
+        "to": "14:00",
+        "name": "test 2",
+        "number": 123132124
+    }
+]
