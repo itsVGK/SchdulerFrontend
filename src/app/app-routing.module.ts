@@ -8,7 +8,7 @@ import { TimeslotComponent } from './bookings/timeslot/timeslot.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'slots', component: SlotComponent },
-  { path: '**', component: TimeslotComponent }
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({

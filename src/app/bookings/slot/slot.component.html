@@ -20,7 +20,8 @@
         <div class="row">
             <ng-container *ngFor='let time of morningSlotFilter'>
                 <button type="button" class="btn btn-light m-2" placement="bottom"
-                    ngbTooltip="till {{time.to}}">{{time.from}}</button>
+                    ngbTooltip="till {{time.to_date | date:'HH:mm':'+0000'}}">{{time.from_date |
+                    date:'HH:mm':'+0000'}}</button>
             </ng-container>
             <ng-container *ngIf="morningSlotFilter && morningSlotFilter.length<1">
                 No Slots are Booked
@@ -35,7 +36,8 @@
         <div class="row">
             <ng-container *ngFor='let time of eveningSlotFilter'>
                 <button type="button" class="btn btn-light m-2" placement="bottom"
-                    ngbTooltip="till {{time.to}}">{{time.from}}</button>
+                    ngbTooltip="till {{time.to_date | date:'HH:mm':'+0000'}}">{{time.from_date |
+                    date:'HH:mm':'+0000'}}</button>
             </ng-container>
             <ng-container *ngIf="eveningSlotFilter && eveningSlotFilter.length<1">
                 No Slots are Booked

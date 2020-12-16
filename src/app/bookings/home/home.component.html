@@ -23,6 +23,7 @@
                 <tr>
                     <th>Name</th>
                     <th>Mobile</th>
+                    <th>Date</th>
                     <th>Slot From</th>
                     <th>Slot To</th>
                 </tr>
@@ -30,10 +31,11 @@
             <tbody>
                 <ng-container *ngFor="let data of slotFilter">
                     <tr>
-                        <td scope="row">{{data.name}}</td>
-                        <td scope="row">{{data.number}}</td>
-                        <td scope="row">{{data.from}}</td>
-                        <td scope="row">{{data.to}}</td>
+                        <td scope="row">{{data.userName || 'NA'}}</td>
+                        <td scope="row">{{data.mobile}}</td>
+                        <td scope="row">{{data.from_date | date :"MM/dd/yyyy":'+0000' }}</td>
+                        <td scope="row">{{data.from_date | date :"HH:mm":'+0000'}}</td>
+                        <td scope="row">{{data.to_date | date :"HH:mm":'+0000'}}</td>
                     </tr>
                 </ng-container>
             </tbody>

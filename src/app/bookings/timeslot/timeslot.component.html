@@ -17,11 +17,19 @@
             <form #slotForm='ngForm' (ngSubmit)='validateSlotBooking()'>
 
                 <div class="modal-body">
+                    <label for="userName">UserName
+                        <input type="text" class="form-control" required name="userName"
+                            [(ngModel)]="slotModalData.userName">
+                    </label><br>
+                    <label for="mobile">Mobile
+                        <input type="text" class="form-control" required name="mobile"
+                            [(ngModel)]="slotModalData.mobile">
+                    </label><br>
                     <label for="from_time">From:
-                        <ngb-timepicker [(ngModel)]="from_time" name="from_time"></ngb-timepicker>
+                        <ngb-timepicker [(ngModel)]="slotModalData.from_time" name="from_time"></ngb-timepicker>
                     </label><br>
                     <label for="to_time">To:
-                        <ngb-timepicker [(ngModel)]="to_time" name="to_time"></ngb-timepicker>
+                        <ngb-timepicker [(ngModel)]="slotModalData.to_time" name="to_time"></ngb-timepicker>
                     </label>
                 </div>
 

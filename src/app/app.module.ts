@@ -1,10 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
-import { NgbDatepickerModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BookingsModule } from './bookings/bookings.module';
 
 @NgModule({
@@ -14,7 +13,8 @@ import { BookingsModule } from './bookings/bookings.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BookingsModule
+    BookingsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
